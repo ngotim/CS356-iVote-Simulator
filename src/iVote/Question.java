@@ -2,9 +2,9 @@ package iVote;
 
 public class Question 
 {
-	String[] choices = new String[0];
-	String answer = "";
-	String question = "";
+	private String[] choices = new String[0];
+	private String answer = "";
+	private String question = "";
 	
 	public Question(String[] c, String ans, String quest)
 	{
@@ -20,6 +20,10 @@ public class Question
 	public void setAnswer(String ans)
 	{
 		answer = ans;
+	}
+	public String[] getChoices()
+	{
+		return choices;
 	}
 	public void display()
 	{
